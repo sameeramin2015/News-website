@@ -1,0 +1,1 @@
+I should use usecontext in my project to fetch data from the API once and share it to the all components

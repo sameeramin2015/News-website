@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    padding-left: 50px;
+}
+.theme{
+    margin-left: 50px;
+    padding-top: 13px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: hsl(235, 24%, 19%);
+    color: lightgray;
+    padding-right: 100px;
+}
+.nav-links {
+    display: flex;
+    justify-content:flex-start;
+    list-style: none;
+    width: 100%;
+
+}
+.nav-links, .nav-li {
+    text-decoration: none;
+}
+.nav-li {
+   display: flex;
+   justify-content: space-between;
+   color: lightgray;
+   font-size: 18px;
+   padding: 5px 0px;
+   margin: 0 5px;
+   cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+.mobile-menue-icon{
+    display: none;
+}
+.nav-links .nav-li a, .nav-links .nav-li a:visited {
+    display: block;
+    padding: 0 10px;
+    line-height: 45px;
+    background: #36454f;
+    border-radius: 10px;
+    color: white;
+    
+    text-decoration: none;
+}
+.nav-links a:hover, .nav-links a:visited:hover {
+    background: black;
+    border-radius: 10px;
+    color: lightblue
+}
+.icon{
+   padding-top: 10px;
+   font-size: 25px;
+}
+ @media screen and(max-width: 1144px) {
+    .nav-links{
+        display: none
+    }
+ }
+@media screen and (max-width: 780px){
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #36454f;
+        left: 0px;
+        top: 75px;
+        transition: all 0.5 ease-out;
+        width: 100%;
+      }
+    .nav-li{
+          color: lightgray;  
+          text-align: center;
+          padding: 32px;
+          width: 100%;
+          transition: all 0.5 ease-out;
+    }
+    .mobile-menue-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color:white;
+        background-color: #36454f;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+
+
+    }
+}
+    

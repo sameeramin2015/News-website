@@ -1,0 +1,21 @@
+:root{
+    --background: #ffffff;
+}
+
+[data-theme='dark'] {
+    --background: #000;
+}
+.app {
+    background-color: var(--background);
+    transition: all .5s;
+}
+
+.theme-togge i{
+    font-size: 5rem;
+    cursor: pointer;
+}
+.theme-togge{
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
