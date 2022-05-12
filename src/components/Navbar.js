@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./navbar.css"
-
 import logo from "../image/logo.png";
 import {MdSportsHandball} from "react-icons/md";
 import {SiYourtraveldottv} from "react-icons/si";
@@ -28,34 +27,33 @@ const Navbar = () => {
       <ul class={responsive ? "nav-links-mobile": "nav-links"}
       onClick={()=> setResponsive(false)}
       >
-        <li className='nav-li'>
-          <a href="/"><BiWorld className='icon'/>News</a>
+        <li class='nav-li'>
+          <a href="/"><BiWorld class='icon'/>News</a>
         </li>
-        <li className='nav-li'>
-          <a href="/TravelNewsList" alt="link to travel"><SiYourtraveldottv className='icon' />Travel</a>
+        <li class='nav-li'>
+          <a href="/TravelNewsList" alt="link to travel"><SiYourtraveldottv class='icon' />Travel</a>
         </li>
-        <li className='nav-li'>
-          <a href="/SportNewsList"><MdSportsHandball className='icon' />Sport</a>
+        <li class='nav-li'>
+          <a href="/SportNewsList"><MdSportsHandball class='icon' />Sport</a>
         </li>
-        <li className='nav-li'>
-          <a href="/HealthNewsList"><SiWorldhealthorganization className='icon' />Health</a>
+        <li class='nav-li'>
+          <a href="/HealthNewsList"><SiWorldhealthorganization class='icon' />Health</a>
         </li>
-        <li className='nav-li'>
-          <a href="/WeatherNewsList"><TiWeatherPartlySunny className='icon' />Weather</a>
+        <li class='nav-li'>
+          <a href="/WeatherNewsList"><TiWeatherPartlySunny class='icon' />Weather</a>
         </li>
-        <li className='nav-li'>
-          <a href="/EntertainmentNewsList"><RiExchangeFundsLine className='icon' />Entertainment</a>
+        <li class='nav-li'>
+          <a href="/EntertainmentNewsList"><RiExchangeFundsLine class='icon' />Entertainment</a>
         </li>
-        <li className='nav-li'>
-          <a href="/BusinessNewsList"><FaBusinessTime className='icon' />Business</a>
+        <li class='nav-li'>
+          <a href="/BusinessNewsList"><FaBusinessTime class='icon' />Business</a>
         </li>
-        <li className='nav-li'>
-          <a href="/TechnologyNewsList"><AiOutlineRocket className='icon' />Technology</a>
+        <li class='nav-li'>
+          <a href="/TechnologyNewsList"><AiOutlineRocket class='icon' />Technology</a>
         </li>
-        <li className='nav-li'>
-          <a href="/ScienceNewsList"><GiMaterialsScience className='icon' />Science</a>
+        <li class='nav-li'>
+          <a href="/ScienceNewsList"><GiMaterialsScience class='icon' />Science</a>
         </li>
-         
         
       </ul>
       <button className='mobile-menue-icon'

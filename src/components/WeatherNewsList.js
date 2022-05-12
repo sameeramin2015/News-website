@@ -31,6 +31,7 @@ function WeatherNewsList() {
     
        <div className='container' data-theme={theme} >
       {/* dark mode toggle button */}
+      {/* 
      <div class="theme">
                 <div>
                     <input  onClick={switchTheme} type="checkbox" class="checkbox" id="chk" />
@@ -42,6 +43,7 @@ function WeatherNewsList() {
                 </div>
                 
       </div>
+      */}
 
       {articles.map(article=>{
           return(

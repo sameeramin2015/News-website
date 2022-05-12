@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .logo{
-    padding-left: 50px;
+    padding-left: 200px;
+    margin-right: 100px;
 }
 .theme{
     margin-left: 50px;
@@ -12,12 +13,12 @@
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 90px;
     background-color: hsl(235, 24%, 19%);
     color: lightgray;
-    padding-right: 100px;
+    padding-right: 20px;
 }
 .nav-links {
     display: flex;

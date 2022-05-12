@@ -4,6 +4,7 @@ import Newsitem from './Newsitem';
 import useLocalStorage from "use-local-storage"
 
 const NewsList =()=> {
+  
   // useLocalStorage hook
   const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
   // change dark mode function
@@ -11,7 +12,7 @@ const NewsList =()=> {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme)
   }
-  
+ 
   // useState hook   
   const [articles, setArticles] = useState([]);
 
@@ -27,10 +28,12 @@ const NewsList =()=> {
         
         getArticles()
     }, [])
+    
   return (
     
        <div className='container' data-theme={theme} >
-      {/* dark mode toggle button */}
+      
+      {/* 
      <div class="theme">
                 <div>
                     <input  onClick={switchTheme} type="checkbox" class="checkbox" id="chk" />
@@ -42,6 +45,7 @@ const NewsList =()=> {
                 </div>
                 
       </div>
+      */}
 
       {articles.map(article=>{
           return(
@@ -55,7 +59,7 @@ const NewsList =()=> {
       })}
     </div>
     
-      
+   
   )
 }
 

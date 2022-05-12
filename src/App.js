@@ -2,16 +2,13 @@
 import React from 'react';
 import NewsList from './components/NewsList';
 
-
-
+// Home page 
 function App() {
- 
-  return (
+   return (
     <div className="app" >
      <NewsList />
-    
     </div>
   );
 }
 
-export default App;
+export default App

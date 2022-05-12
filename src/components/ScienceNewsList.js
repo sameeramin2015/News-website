@@ -31,17 +31,19 @@ function ScienceNewsList() {
     
        <div className='container' data-theme={theme} >
       {/* dark mode toggle button */}
+      {/* 
      <div class="theme">
                 <div>
                     <input  onClick={switchTheme} type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
+                        <div className="ball"></div>
                     </label>
                 </div>
                 
       </div>
+      */}
 
       {articles.map(article=>{
           return(
